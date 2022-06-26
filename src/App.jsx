@@ -11,7 +11,7 @@ const App = () => {
   useEffect(() => {
     async function fetchQuery() {
       const response = await axios.get(
-        "http://gateway.marvel.com/v1/public/characters",
+        "https://gateway.marvel.com/v1/public/characters",
         {
           params: { ...params, offset: page },
         }
